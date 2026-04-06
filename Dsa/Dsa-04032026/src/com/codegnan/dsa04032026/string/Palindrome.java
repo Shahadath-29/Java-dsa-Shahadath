@@ -1,0 +1,22 @@
+package com.codegnan.dsa04032026.string;
+
+public class Palindrome {
+	public static void main(String[] args) {
+		String str ="madam";
+		char[] ch = str.toCharArray();
+		int right =ch.length-1;
+		int left=0;
+		while(left<right) {
+			if(ch[left]==ch[right]) {
+				left++;
+				right--;
+			}else {
+				System.out.println("Not a palindrome");
+				return;
+				
+			}
+		}
+		System.out.println("Palindrome");
+	}
+
+}
